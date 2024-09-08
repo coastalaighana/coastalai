@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Meet the team</h1>
+ 
+     <p>Our mission is to harness the power of artificial intelligence to solve real-world problems and create a brighter future.</p>
+     <p>We are a team of passionate innovators dedicated to developing cutting-edge AI solutions that drive positive change.</p>
+     <p>With a focus on  machine learning, natural language processing, computer vision etc. We are committed to pushing the boundaries of what is possible with AI.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="assets/aboutmepics/evans-new-2.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Evans Doe Ocansey</h2>
+        <p class="title">Co-Founder</p>
+           <p>Evans  completed his Bachelor's degree (First Class Honours, Kwame Nkrumah University 
+        of Science and Technology) in 2009, his Post Graduate Diploma (Mathematical Science, 
+        African Institute for Mathematical Sciences) in 2011, his Master's degree (Cum Laude, Stellenbosch University) 
+        in 2013, and his PhD degree (Distinction, Johannes Kepler University Linz) in Mathematics in 2019. 
+        He then worked as a Postdoc at the Institute for Algebra & Research Institute for Symbolic 
+        Computation at Johannes Kepler University from 2019 to 2021. Since October 2022, 
+        he has been a Data Scientist at RISC Software GmbH, where he works on various customer 
+        and research projects. 
+         
+	<h2>Areas of Expertise</h2>
+
+            <ul>
+              <li> Time series forecasting Machine Learning.</li>
+              <li> Deep Learning for supervised, unsupervised, semi-supervised related problems..</li>
+            </ul> 
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Moore" style="width:100%">
+      <div class="container">
+        <h2>Stephen Moore</h2>
+        <p class="title">Co-Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="assets/aboutmepics/nana3.png" alt="Nana" style="width:100%">
+      <div class="container">
+        <h2>Nana Boateng</h2>
+        <p class="title">Co-Founder</p>
+          <p> Nana interested in Applying mathematics, statistics,economics and computer science concepts in solving business, economic, finance and industrial problems.</p>
+	  <h2>Education</h2>
+
+              <ul>
+                   <li> Ph.D (2016), Statistics, University of Memphis.</li>
+                   <li> MA (2017), Economics, University of Memphis.</li>
+                   <li> M.Sc (2014), Statistics, University of Memphis.</li>
+                   <li> M.Sc (2012), Mathematics, Middle Tennessee State University.</li>
+                   <li> B.Sc (2007), Mathematics , Kwame Nkrumah University of Science and Technology.</li>
+                </ul>        
+	      
+	      <h2>Areas of Expertise</h2>
+
+                 <ul>
+                    <li> Applied statistical methods such as non-parametric methods,exact statistical methods, bayesian inference, hierachical/multilevel models, time series, survival analysis ,Markov Chain Monte-carlo.</li>
+                    <li>Machine learning (deep learning, recommender systems, natural language processing, network analysis), Clustering Algorithms, Dimensionality Reduction.</li>
+                    <li>Quantitative finance ( Monte Carlo simulation, risk quantification, portfolio optimization, economic scenario generation)</li>
+                 </ul> 
+        <p>coastalaighana@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

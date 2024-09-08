@@ -1,0 +1,137 @@
+#remote_theme: daattali/beautiful-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+
+navbar-links:
+  Blog: "/"
+  Hire Us: "https://coastalartificialintelligence.github.io/"
+  Projects: "projects"
+  About Us : "aboutme"
+  Contact: "aboutme"
+  ❤ Support: "https://github.com/sponsors/coastalartificialintelligence"
+
+
+
+social-network-links:
+  email: "coastalaighana@gmail.com"
+  facebook: 
+  github: coastalaighana
+  twitter: 
+  linkedin: ""
+  calendly: ""
+
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+excerpt_length: 50
+feed_show_excerpt: false
+feed_show_tags: false
+
+keywords: "Genrative AI, Machine Learning, Artificial Intelligence"
+
+
+
+mobile-theme-col: "#0085A1"
+
+site-css: "/assets/css/custom-styles.css"
+site-js: "/assets/js/custom-script.js"
+
+edit_page_button: true
+
+timezone: "America/NewYork"
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+
+#gtag: "G-HKWW77BNTR"
+#fb_app_id: "536330676521989"
+
+url-pretty: "❤ Support"
+url-canonical: https://github.com/sponsors/coastalartificialintelligence
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "notblog"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: true
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "page"
+      comments: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+      before-content: [support_promo_box.html, carbonads.html]
+      footer-extra: footer-subscribe.html
+      
+      
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+#link-col: "#404040"
+hover-col: "#0085A1"
+navbar-col: "#17100F"
+navbar-text-col: "	#FFFFFF"
+navbar-border-col: "#DDDDDD"
+footer-col: "#17100F"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"      
+      
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - docs/
+  - files/java/Scrabble/*
+
+# 2fc73a3a967e97599c9763d05e564189d5
